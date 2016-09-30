@@ -1,0 +1,60 @@
+﻿Build started 9/25/2016 11:40:22 PM.
+     1>Project "C:\Users\enan7890\Documents\qip.hw\qip.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing Clip.h...
+         Moc'ing Contrast.h...
+         Moc'ing Dummy.h...
+         Moc'ing Gamma.h...
+         Moc'ing HistoMatch.h...
+         Moc'ing HistoStretch.h...
+         Moc'ing MainWindow.h...
+         Moc'ing Quantize.h...
+         Moc'ing Threshold.h...
+         Moc'ing qcustomplot.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /IIP\win\header /I..\..\..\..\qt\5.5\msvc2013_64\include /I..\..\..\..\qt\5.5\msvc2013_64\include\QtPrintSupport /I..\..\..\..\qt\5.5\msvc2013_64\include\QtWidgets /I..\..\..\..\qt\5.5\msvc2013_64\include\QtGui /I..\..\..\..\qt\5.5\msvc2013_64\include\QtANGLE /I..\..\..\..\qt\5.5\msvc2013_64\include\QtCore /Imoc /I"..\..\..\..\qt\5.5\msvc2013_64\mkspecs\win32-msvc2013" /Zi /nologo /W3 /WX- /MP /Od /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_PRINTSUPPORT_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -w34100 -w34189 -w44996 HistoStretch.cpp moc\moc_Clip.cpp moc\moc_Contrast.cpp moc\moc_Dummy.cpp moc\moc_Gamma.cpp moc\moc_HistoMatch.cpp moc\moc_HistoStretch.cpp moc\moc_MainWindow.cpp moc\moc_qcustomplot.cpp moc\moc_Quantize.cpp moc\moc_Threshold.cpp
+         HistoStretch.cpp
+         moc_Clip.cpp
+         moc_Contrast.cpp
+         moc_Dummy.cpp
+     1>c:\users\enan7890\documents\qip.hw\hw1/HW_histoStretch.cpp(20): warning C4101: 'check' : unreferenced local variable (HistoStretch.cpp)
+     1>c:\users\enan7890\documents\qip.hw\hw1/HW_histoStretch.cpp(23): warning C4189: 'nMax' : local variable is initialized but not referenced (HistoStretch.cpp)
+     1>c:\users\enan7890\documents\qip.hw\hw1/HW_histoStretch.cpp(20): warning C4101: 'a' : unreferenced local variable (HistoStretch.cpp)
+     1>c:\users\enan7890\documents\qip.hw\hw1/HW_histoStretch.cpp(20): warning C4101: 'b' : unreferenced local variable (HistoStretch.cpp)
+     1>c:\users\enan7890\documents\qip.hw\hw1/HW_histoStretch.cpp(22): warning C4189: 'nMin' : local variable is initialized but not referenced (HistoStretch.cpp)
+         moc_Gamma.cpp
+         moc_HistoMatch.cpp
+         moc_HistoStretch.cpp
+         moc_MainWindow.cpp
+         moc_qcustomplot.cpp
+         moc_Quantize.cpp
+         moc_Threshold.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\qip.exe" /NOLOGO /LIBPATH:C:\qt\5.5\msvc2013_64\lib /LIBPATH:C:/qt/5.5/msvc2013_64/lib /LIBPATH:C:\Qt\5.5\msvc2013_64\lib /LIBPATH:.\IP\win\lib C:\qt\5.5\msvc2013_64\lib\qtmaind.lib shell32.lib C:/qt/5.5/msvc2013_64/lib\Qt5Cored.lib .\IP\win\lib\IP_d.lib C:\qt\5.5\msvc2013_64\lib\Qt5PrintSupportd.lib C:\qt\5.5\msvc2013_64\lib\Qt5Widgetsd.lib C:\qt\5.5\msvc2013_64\lib\Qt5Guid.lib C:\qt\5.5\msvc2013_64\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\qip.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\Clip.obj
+         x64\Debug\Contrast.obj
+         x64\Debug\Dummy.obj
+         x64\Debug\Gamma.obj
+         x64\Debug\HistoMatch.obj
+         x64\Debug\HistoStretch.obj
+         x64\Debug\ImageFilter.obj
+         x64\Debug\MainWindow.obj
+         x64\Debug\moc_Clip.obj
+         x64\Debug\moc_Contrast.obj
+         x64\Debug\moc_Dummy.obj
+         x64\Debug\moc_Gamma.obj
+         x64\Debug\moc_HistoMatch.obj
+         x64\Debug\moc_HistoStretch.obj
+         x64\Debug\moc_MainWindow.obj
+         x64\Debug\moc_qcustomplot.obj
+         x64\Debug\moc_Quantize.obj
+         x64\Debug\moc_Threshold.obj
+         x64\Debug\Quantize.obj
+         x64\Debug\Threshold.obj
+         x64\Debug\main.obj
+         x64\Debug\qcustomplot.obj
+         qip.vcxproj -> C:\Users\enan7890\Documents\qip.hw\debug\qip.exe
+     1>Done Building Project "C:\Users\enan7890\Documents\qip.hw\qip.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:37.10
