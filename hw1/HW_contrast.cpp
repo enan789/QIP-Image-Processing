@@ -36,7 +36,7 @@ HW_contrast(ImagePtr I1, double brightness, double contrast, ImagePtr I2)
 		//the end to brighten the image by being closer to white. CLIP makes sure if they past 0 or 255 they will be set to them
 		lut[i] = CLIP((i - reference)*slope + reference + brightness, 0, 255);
 	}
-
+	
 	int type;
 	ChannelPtr<uchar> p1, p2, endd;
 	for (int ch = 0; IP_getChannel(I1, ch, p1, type); ch++) {

@@ -21,7 +21,8 @@ HW_quantize(ImagePtr I1, int levels, bool dither, ImagePtr I2)
 	// compute lut[]
 	int i, j, lut[MXGRAY];
 	int type;
-	int val, nval;
+	int val, nval, noise;
+	double ran1;
 	int s = 1;
 	ChannelPtr<uchar> p1, p2, endd;
 
@@ -43,13 +44,16 @@ HW_quantize(ImagePtr I1, int levels, bool dither, ImagePtr I2)
 		for (int ch = 0; IP_getChannel(I1, ch, p1, type); ch++) {
 			IP_getChannel(I2, ch, p2, type);
 			for (i = 0; i < h; i++){
+				s *= -1;
 				for (j = 0; j < w; j++){
 					
-					double ran1 = rand() / RAND_MAX;
-					val = (ran1* (scale / 2))*s;
-					nval = CLIP(lut[*p1] + (val*s), 0, 255);
-					*p2++ = lut[*p1++ + nval];
+					ran1 = (double) rand() / RAND_MAX;
+					noise = (ran1* (scale / 2))*s;
+					val = *p1++ + noise;
+					nval = CLIP(val, 0, 255);
+					*p2++ = lut[nval];
 					s *= -1;
+					
 
 				}
 			}
